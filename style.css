@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto Slab', serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.center-button {
+    margin: auto;
+    margin-right: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* top-menu */
+
+.top-bar {
+    display: none;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.6);
+}
+
+.working-hours {
+    color: #626262;
+    display: flex;
+    align-items: center;
+}
+
+.working-hours i {
+    margin-right: 0.5rem;
+    color: #2BAAEC;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    list-style-type: none;
+}
+
+.social-icons i {
+    margin-left: 1rem;
+    color: #2BAAEC;
+    font-size: 1.2rem;
+}
+
+.social-icons i:hover {
+    color: #25E6C8;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* main-menu */
+
+.main-menu-bar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-menu-bar p {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: #363636;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    align-items: center;
+    display: flex;
+    line-height: 1;
+}
+
+.logo img {
+    margin-right: 1rem;
+    height: 80%;
+}
+
+.blue-text {
+    color: #2BAAEC;
+}
+
+.logo-text-small {
+    color: #626262;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.main-menu {
+    display: none;
+    list-style-type: none;
+    color: #363636;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    align-items: center;
+}
+
+.main-menu a {
+    color: #363636;
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+    color: #626262;
+}
+
+.main-menu li {
+    margin-left: 1rem;
+}
+
+.menu-button {
+    color: #626262;
+    border: transparent;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* showcase */
+
+.showcase {
+    background-color: #DEDEDE;
+    padding-top: 3rem;
+}
+
+.showcase img {
+    display: none;
+    margin-right: 3rem;
+}
+
+.showcase-right-side {
+    margin: 0;
+}
+
+.showcase-text-large {
+    color: #363636;
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+}
+
+.showcase-text-small {
+    color: #626262;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-button {
+    color: #FFFFFF;
+    background-color: #25E6C8;
+    font-size: 16px;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem; 
+    display: block;
+}
+
+.about-button:hover {
+    background-color: #19d7ba;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* about-us */
+
+.about-us {
+    padding-top: 3rem;
+}
+
+.about-us-text-large {
+    color: #363636;
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    margin: auto;
+    margin-left: 0;
+}
+
+.about-us-text-small {
+    color: #626262;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    border-top: 3px solid rgba(112, 112, 112, 0.6);
+    padding-top: 2rem;
+}
+
+.about-us img {
+    display: none;
+}
+
+.stats {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    line-height: 0.8;
+}
+
+.stats .blue-text {
+    margin-right: 8rem;
+}
+
+.stats-text {
+    font-size: 18px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* services */
+
+.services {
+    color: #363636;
+    background-color: #F7F7F7;
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.services-text {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid rgba(112, 112, 112, 0.6);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.grid-item {
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    height: 330px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item:hover .circle, .grid-item.hover .circle {
+    background-color: #2BAAEC;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: #25E6C8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.circle img {
+    height: 50%;
+}
+
+.grid-item .service-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #363636;
+}
+
+.grid-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #626262;
+    line-height: 24px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* appointment */
+
+.appointment {
+    color: #FFFFFF;
+    background-color: rgba(43, 170, 236, 0.8);
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.book-button {
+    color: #363636;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: #F7F7F7;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* footer */
+
+.footer {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #2BAAEC;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* media queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .top-bar {
+        display: block;
+    }
+    .main-menu-bar .logo img {
+        height: 100%;
+    }
+    .main-menu-bar .logo {
+        font-size: 24px;
+    }
+    .main-menu-bar .center-button {
+        display: none;
+    }
+    .logo-text-small {
+        font-size: 16px;
+    }
+    .main-menu {
+        display: flex;
+    }
+    .menu-button {
+        display: none;
+    }
+    .showcase-text-large {
+        font-size: 40px;
+    }
+    
+    .showcase-text-small {
+        font-size: 18px;
+
+    }
+    .about-button {
+        font-size: 18px;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .about-us-text-large {
+        font-size: 40px;
+
+    }
+    .about-us-text-small {
+        font-size: 18px;
+    }
+    .stats {
+        display: flex;
+    }
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+    .services {
+        font-size: 40px;
+    }
+    .appointment {
+        font-size: 18px;
+    }
+    .appointment .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .book-button {
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .showcase img {
+        display: block;
+    }
+    .showcase-right-side {
+        margin: auto;
+    }
+    .showcase-text-large {
+        font-size: 60px;
+    }
+    .about-button {
+        margin-bottom: 0;
+    }
+    .about-us img {
+        display: block;
+    }
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+    .grid-item {
+        height: 410px;
+        width: 410px;
+    }
+    .grid-item .service-title {
+        font-size: 22px;
+    }
+    
+    .grid-item p {
+        font-size: 18px;
+    }
+    .appointment {
+        font-size: 30px;
+    }
+    
+    .book-button {
+        font-size: 18px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
